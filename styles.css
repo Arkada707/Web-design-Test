@@ -25,15 +25,25 @@ html, body {
 }
 
 .logo {
-    font-size: 2rem;
-    color: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00); 
-    /* Rest of your logo styles */
+    background: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* For browsers that support this property without prefix */
+    display: inline-block; /* Required to apply the background clip to text */
+    font-size: 1.2em; /* Adjust as needed */
 }
 
 .nav-links {
     list-style-type: none;
-    display: flex;
     gap: 1rem;
+    background: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* For browsers that support this property without prefix */
+    display: inline-block; /* Required to apply the background clip to text */
+    font-size: 1.2em; /* Adjust as needed */
     /* Rest of your nav-links styles */
 }
 
