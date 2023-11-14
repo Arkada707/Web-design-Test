@@ -42,7 +42,7 @@ html, body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent; /* For browsers that support this property without prefix */
-    display: inline-block; /* Required to apply the background clip to text */
+    display: flex; /* Required to apply the background clip to text */
     font-size: 1.2em; /* Adjust as needed */
     /* Rest of your nav-links styles */
 }
