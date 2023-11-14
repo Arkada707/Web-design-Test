@@ -192,4 +192,12 @@ h1, h2, h3, h4, h5, h6, span, a, li, .logo, .nav-links a, button {
         padding: 1rem; /* Less padding on small screens */
     }
 
+    p, a, .nav-links a, button {
+        font-size: 12px; /* Smaller font size for text on mobile */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 14px; /* Smaller font size for headers on mobile */
+    }
+
 }
