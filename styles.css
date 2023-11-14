@@ -26,7 +26,7 @@ html, body {
 
 .logo {
     font-size: 2rem;
-    color: gold; /* or use the metallic effect if preferred */
+    color: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00); 
     /* Rest of your logo styles */
 }
 
@@ -39,7 +39,7 @@ html, body {
 
 .nav-links a {
     text-decoration: none;
-    color: gold; /* or use the metallic effect if preferred */
+    color: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00); 
     /* Rest of your nav-links anchor styles */
 }
 
