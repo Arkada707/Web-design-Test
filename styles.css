@@ -1,17 +1,11 @@
 /* Base and reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html, body {
     width: 100%;
     height: 100%;
     font-family: 'Playfair Display', serif;
     color: #ffffff;
     background-color: #000000;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Navbar styles */
@@ -27,186 +21,83 @@ html, body {
     left: 0;
     right: 0;
     z-index: 10;
+    /* Rest of your navbar styles */
 }
 
 .logo {
-    font-size: 2rem; /* Logo font size */
-    background: -webkit-linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 2rem;
+    color: gold; /* or use the metallic effect if preferred */
+    /* Rest of your logo styles */
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    /* Rest of your nav-links styles */
 }
 
 .nav-links a {
-    display: inline;
-}
-
-.nav-links a:hover {
-    color: #fff;
+    text-decoration: none;
+    color: gold; /* or use the metallic effect if preferred */
+    /* Rest of your nav-links anchor styles */
 }
 
 /* Hero section styles */
 .hero {
     background: url('Im1.png') no-repeat center center/cover;
-    width: 100%;
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 60px; /* To push down the content below the navbar */
+    height: 50vh; /* Adjusted for mobile */
+    padding-top: 60px; /* Height of the navbar */
+    /* Rest of your hero styles */
 }
 
-/* Sections */
-.section {
-    padding: 4rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Container styles for sections */
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border: 5px solid gold; /* Gold border for luxury look */
-    width: 100%; /* Ensure container takes full width */
-    padding: 15px; /* Add padding */
-    box-sizing: border-box; /* Include padding and border in the width */
-    margin-bottom: 2rem; /* Space between sections */
+    flex-direction: column; /* Stack children for mobile */
+    align-items: center; /* Center-align children */
+    width: 100%; /* Full width */
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid gold; /* Gold border for container */
 }
 
-/* Image and text container styling */
-.feature-image-container, .feature-text-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 500px; /* Adjust as needed */
-}
-
-/* Feature image styling */
+/* Image styles for responsiveness */
 .feature-image {
-    width: 100%; /* Responsive image */
-    max-width: 40%; /* Adjust the width as necessary */
-    height: auto;
-    margin: 0 auto; /* Center the image */
-}
-
-/* Text content styling */
-.text-content {
-    max-width: 60%; /* Adjust the width to give more space to text */
-    text-align: center;
-    padding: 2rem; /* Add padding to make the text block stand out more */
-}
-
-/* Heading and paragraph styling within the text content */
-.text-content h2 {
-    font-size: 1.5rem; /* Increase the font size */
-    margin-bottom: 1rem; /* Add more space below the heading */
-}
-
-.text-content p {
-    font-size: 1rem; /* Adjust font size as needed */
-    margin-bottom: 0.5rem; /* Adjust spacing between paragraphs */
-}
-
-/* Call to action section specific styles */
-.call-to-action .container {
-    flex-direction: row-reverse; /* Image on the left, text on the right */
-}
-
-/* Feature section specific styles */
-.feature .container {
-    flex-direction: row; /* Text on the left, image on the right */
-}
-
-/* Button styling */
-button {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent; /* For non-webkit browsers, if supported */
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem; /* Space above the button */
-    border: 5px solid gold; /* Gold border for luxury look */
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: darkgoldenrod;
-    color: #fff;
-}
-
-/* Apply a metallic gradient to all text */
-h1, h2, h3, h4, h5, h6, span, a, li, .logo, .nav-links a, button {
-    background: -webkit-linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline; /* Use 'inline' or 'inline-block' as needed */
-    text-fill-color: transparent; /* For non-webkit browsers, if supported */
-}
-
-img {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 95%; /* Slightly less than full width to account for padding/margin */
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Text content styles for visibility */
+.text-content {
+    text-align: center;
+    padding: 10px; /* Padding for text content */
+    color: #ffffff; /* Fallback text color */
+    background: linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block; /* For text background clip */
+}
 
-/* Responsive design adjustments */
+/* Button styles */
+button {
+    /* Rest of your button styles */
+    background-clip: padding-box; /* Clip background to padding box */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+    /* Adjust text sizes for mobile */
+    h1, h2, h3, h4, h5, h6, p, a, li, .logo, .nav-links a, button {
+        font-size: smaller; /* Adjust font size as needed */
+    }
+    
+    /* Make sure images don't overflow their containers */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links a {
-        padding: 0.5rem;
-    }
-
-    .hero {
-        height: 50vh; /* Adjust hero height on mobile */
-    }
-
-    .section {
-        padding: 2rem 0;
-    }
-
-    .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .feature-image {
-        max-width: 80%; /* Larger width for images on small screens */
-    }
-
-    .text-content {
-        max-width: 90%; /* Full width for text content on small screens */
-        padding: 1rem; /* Less padding on small screens */
-    }
-
-    p, a, .nav-links a, button {
-        font-size: 12px; /* Smaller font size for text on mobile */
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 14px; /* Smaller font size for headers on mobile */
-    }
-
+    /* Additional responsive styles if needed */
 }
