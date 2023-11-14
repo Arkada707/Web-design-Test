@@ -1,0 +1,195 @@
+/* Base and reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 2rem; /* Logo font size */
+    background: -webkit-linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    display: inline;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('Im1.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 60px; /* To push down the content below the navbar */
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 5px solid gold; /* Gold border for luxury look */
+    padding: 2rem;
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+/* Image and text container styling */
+.feature-image-container, .feature-text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px; /* Adjust as needed */
+}
+
+/* Feature image styling */
+.feature-image {
+    width: 100%; /* Responsive image */
+    max-width: 40%; /* Adjust the width as necessary */
+    height: auto;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Text content styling */
+.text-content {
+    max-width: 60%; /* Adjust the width to give more space to text */
+    text-align: center;
+    padding: 2rem; /* Add padding to make the text block stand out more */
+}
+
+/* Heading and paragraph styling within the text content */
+.text-content h2 {
+    font-size: 1.5rem; /* Increase the font size */
+    margin-bottom: 1rem; /* Add more space below the heading */
+}
+
+.text-content p {
+    font-size: 1rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Adjust spacing between paragraphs */
+}
+
+/* Call to action section specific styles */
+.call-to-action .container {
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+}
+
+/* Feature section specific styles */
+.feature .container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+/* Button styling */
+button {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* For non-webkit browsers, if supported */
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem; /* Space above the button */
+    border: 5px solid gold; /* Gold border for luxury look */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+/* Apply a metallic gradient to all text */
+h1, h2, h3, h4, h5, h6, span, a, li, .logo, .nav-links a, button {
+    background: -webkit-linear-gradient(45deg, #a67c00, #bf9b30, #ffdc73, #bf9b30, #a67c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline; /* Use 'inline' or 'inline-block' as needed */
+    text-fill-color: transparent; /* For non-webkit browsers, if supported */
+}
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+    }
+
+    .hero {
+        height: 50vh; /* Adjust hero height on mobile */
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-image {
+        max-width: 80%; /* Larger width for images on small screens */
+    }
+
+    .text-content {
+        max-width: 90%; /* Full width for text content on small screens */
+        padding: 1rem; /* Less padding on small screens */
+    }
+
+}
