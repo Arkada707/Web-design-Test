@@ -82,16 +82,22 @@ html, body {
 
 /* Button styles */
 button {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent; /* For non-webkit browsers, if supported */
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
     margin-top: 1rem; /* Space above the button */
-    border: 5px solid gold; /* Gold border for luxury look */
+    border: 2px solid gold; /* Adjusted border thickness */
     cursor: pointer;
     transition: all 0.3s ease;
-    background-clip: padding-box; /* Clip background to padding box */
+    color: gold; /* Button text color */
+    background: none; /* No background color */
+    border-radius: 0; /* Optional: if you want rounded corners */
+    text-transform: uppercase; /* Optional: for stylistic preference */
+}
+
+/* Hover effect for button */
+button:hover {
+    color: #000; /* Button text color on hover */
+    background-color: gold; /* Background color on hover */
 }
 
 /* Responsive adjustments */
