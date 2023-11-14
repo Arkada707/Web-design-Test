@@ -110,6 +110,24 @@ button:hover {
     background-color: gold; /* Background color on hover */
 }
 
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* Additional styling for layout */
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    /* Additional styling for product image */
+}
+
+.product-info {
+    /* Styles for the product info section */
+    width: 50%; /* Adjust width as needed */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     /* Adjust text sizes for mobile */
@@ -121,6 +139,14 @@ button:hover {
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    .product-detail {
+        flex-direction: column;
+    }
+    
+    .product-info {
+        width: 100%;
     }
 
     /* Additional responsive styles if needed */
