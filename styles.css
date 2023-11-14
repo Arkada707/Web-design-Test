@@ -117,10 +117,17 @@ button:hover {
     /* Additional styling for layout */
 }
 
+.product-image {
+    width: 50vw; /* Example: 50% of the viewport width */
+    height: 50vh; /* Example: 50% of the viewport height */
+    margin: auto; /* This centers the image if the container is flex or grid */
+    overflow: hidden; /* Ensures no overflow if the image is larger than the container */
+}
+
 .product-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    /* Additional styling for product image */
+    display: block;
 }
 
 .product-info {
