@@ -148,6 +148,58 @@ button:hover {
     padding-top: 70px; /* Adjust this value to match the height of your navbar */
 }
 
+.product-highlights {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-highlights h2, 
+.reasons-for-comfort h2, 
+.layers-of-mattress h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reasons-for-comfort {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.reasons-for-comfort .reason {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.reasons-for-comfort .reason:last-child {
+    border-bottom: none;
+}
+
+.layers-of-mattress {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.layers-of-mattress .layer {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.layers-of-mattress .layer span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.layers-of-mattress .layer:last-child {
+    border-bottom: none;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
