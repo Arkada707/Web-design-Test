@@ -11,6 +11,7 @@ html, body {
     font-family: 'Playfair Display', serif;
     color: #ffffff;
     background-color: #000000;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navbar styles */
@@ -76,7 +77,9 @@ html, body {
     align-items: center;
     gap: 20px;
     border: 5px solid gold; /* Gold border for luxury look */
-    padding: 2rem;
+    width: 100%; /* Ensure container takes full width */
+    padding: 15px; /* Add padding */
+    box-sizing: border-box; /* Include padding and border in the width */
     margin-bottom: 2rem; /* Space between sections */
 }
 
@@ -154,6 +157,11 @@ h1, h2, h3, h4, h5, h6, span, a, li, .logo, .nav-links a, button {
     text-fill-color: transparent; /* For non-webkit browsers, if supported */
 }
 
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
@@ -181,6 +189,7 @@ h1, h2, h3, h4, h5, h6, span, a, li, .logo, .nav-links a, button {
     .container {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
 
     .feature-image {
